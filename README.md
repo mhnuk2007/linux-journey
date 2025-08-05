@@ -1,36 +1,52 @@
-## My Linux Journey
-
-I have installed **Ubuntu 24.04.3 LTS** on my PC and am actively practicing Linux commands.
-
-I am following two Udemy courses simultaneously:
-1. *Linux Command Line: From Zero to Hero* by **Pragmatic Programmer**
-2. *Linux for Devops Engineers and Developers* by **Frank Anemaet**
-
 # 🐧 My Linux Learning Journey
 
 Welcome to my personal Linux terminal learning log!  
-I'm using this repository to track the commands I learn, my daily practice, and notes as I explore the Linux shell from scratch — all from an Android device using Termux. 📱💻
+I'm using this repository to track the commands I learn, my daily practice, and notes as I explore the Linux shell.
+
+---
+
+## 📜 What is Linux?
+
+Linux is an open-source, Unix-like operating system kernel first released by **Linus Torvalds** in 1991. It powers everything from smartphones and smart TVs to supercomputers and servers. Due to its flexibility, robustness, and open-source nature, Linux has become the backbone of modern computing.
+
+## 🧠 Why Ubuntu?
+
+**Ubuntu** is one of the most popular Linux distributions, known for its user-friendliness and stability. Maintained by **Canonical Ltd.**, it's widely used for development, DevOps, and personal computing.
+
+I'm currently using:
+
+🖥️ **Ubuntu 24.04.3 LTS**
+
+---
+
+## 👨‍💻 About Me
+
+I have installed **Ubuntu 24.04.3 LTS** on my PC and am actively practicing Linux commands.
+
+I’m following two Udemy courses simultaneously:
+1. *Linux Command Line: From Zero to Hero* by **Pragmatic Programmer**
+2. *Linux for DevOps Engineers and Developers* by **Frank Anemaet**
 
 ---
 
 ## 📖 Table of Contents
 
-- [Getting Started](#getting-started)
-- [Basic Terminal Commands](#basic-terminal-commands)
-- [File & Directory Management](#file--directory-management)
-- [Viewing File Contents](#viewing-file-contents)
-- [Help Commands](#help-commands)
-- [Command History](#command-history)
-- [Useful Tools](#useful-tools)
-- [Resources](#resources)
+- [Getting Started](#-getting-started)
+- [Basic Terminal Commands](#-basic-terminal-commands)
+- [File & Directory Management](#-file--directory-management)
+- [Viewing File Contents](#-viewing-file-contents)
+- [Help Commands](#-help-commands)
+- [Command History](#-command-history)
+- [Useful Tools](#-useful-tools)
+- [Resources](#-resources)
 
 ---
 
 ## 🏁 Getting Started
 
-- I’m practicing Linux via Termux on Android.
-- Commands are tested in a terminal emulator.
-- Learning from interactive lessons, tutorials, and hands-on practice.
+- I’m practicing Linux via Ubuntu and also using Termux on Android.
+- Commands are tested in real-world scenarios and emulated environments.
+- Learning through hands-on sessions and video-based lessons.
 
 ---
 
@@ -104,7 +120,6 @@ Example:
 ```bash
 wget https://www.gutenberg.org/files/1112/1112-0.txt
 cat 1112-0.txt
-```
 
 ---
 
