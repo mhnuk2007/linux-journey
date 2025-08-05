@@ -120,7 +120,7 @@ Example:
 ```bash
 wget https://www.gutenberg.org/files/1112/1112-0.txt
 cat 1112-0.txt
-
+```
 ---
 
 ## 🌱 Still Learning...
