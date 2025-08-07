@@ -68,7 +68,8 @@ clear     # Clear screen
 ## 🧪 Shell Script Basics
 
 ```bash
-echo -e '#!/bin/bash\necho "Hi!"' > hello.sh
+echo -e '#!/bin/bash
+echo "Hi!"' > hello.sh
 chmod +x hello.sh
 ./hello.sh
 ```
@@ -107,7 +108,5 @@ history                      # Show all commands used
 whereis useradd              # Find binary location
 cat /usr/sbin/useradd        # View binary (raw)
 ```
-
----
 
 💡 *Learning by doing makes it stick! I’m using this journal to build my confidence in Linux for DevOps and system-level development.*
