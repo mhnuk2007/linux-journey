@@ -1,4 +1,3 @@
-
 # Linux Command Line Examples
 
 This document includes various Linux command-line examples to help reinforce your learning.
@@ -126,5 +125,51 @@ chmod +x hello.sh
 # Run the script
 ./hello.sh
 ```
+
+---
+
+## 🧑‍💻 User Management
+
+```bash
+# Create a new user with a home directory
+sudo useradd -m username
+
+# Set password for the user
+sudo passwd username
+
+# Add user with a specific shell and comment
+sudo useradd -m -s /bin/bash -c "Full Name" username
+
+# Check if user exists in /etc/passwd
+grep username /etc/passwd
+
+# View user list from passwd file
+cat /etc/passwd
+
+# Switch to another user
+su username
+
+# View home directories
+ls /home
+```
+
+---
+
+## 🧾 Viewing System Info & History
+
+```bash
+# Show command history
+history
+
+# Find location of binaries
+whereis useradd
+whereis adduser
+
+# View binary as text (not readable normally)
+cat /usr/sbin/useradd
+cat /usr/sbin/adduser
+```
+
+---
 
 Keep experimenting and have fun exploring Linux! 🚀
