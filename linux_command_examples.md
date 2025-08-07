@@ -1,75 +1,43 @@
-# Linux Command Line Examples
 
-This document includes various Linux command-line examples to help reinforce your learning.
+# 🐧 Linux Command Line – Practice Notes for Beginners
+
+Mastering the Linux terminal, one command at a time! Here's a growing collection of my command-line examples, including file operations, shell scripting, user management, and switching users.
 
 ---
 
-## 🗂️ Basic File and Directory Commands
+## 🗂️ File & Directory Basics
 
 ```bash
-# Go to home directory
-cd ~
-
-# Make a new folder called Projects and go inside it
-mkdir Projects
+cd ~                      # Go to home
+mkdir Projects            # Make Projects folder
 cd Projects
-
-# Create a file and write text in it
-echo "This is my first text file" > file1.txt
-
-# View contents of a file
-cat file1.txt
-
-# List files and directories
-ls
-
-# List with details (long format)
-ls -l
-
-# List including hidden files
-ls -a
-
-# Make nested directories
-mkdir -p Project1/src
-
-# Remove a file
-rm file1.txt
-
-# Remove a directory
-rmdir Project1/src
+echo "Hello" > file1.txt  # Create file with content
+cat file1.txt             # View file
+ls -la                    # List all (detailed)
+rm file1.txt              # Delete file
+mkdir -p demo/src         # Nested folders
+rmdir demo/src            # Remove empty dir
 ```
 
 ---
 
-## 📝 File Editing
+## 📝 File Editing & Management
 
 ```bash
-# Open a file in nano editor
-nano notes.txt
-
-# Append to a file
-echo "Another line" >> notes.txt
-
-# Copy a file
-cp notes.txt backup.txt
-
-# Move or rename a file
-mv backup.txt backup_renamed.txt
+nano notes.txt                    # Edit file
+echo "Another line" >> notes.txt # Append
+cp notes.txt backup.txt          # Copy
+mv backup.txt renamed.txt        # Rename/Move
 ```
 
 ---
 
-## 🔍 Finding Things
+## 🔍 Search & Inspect
 
 ```bash
-# Find a file by name
-find . -name "notes.txt"
-
-# Search inside a file
-grep "line" notes.txt
-
-# Count words, lines, characters in a file
-wc notes.txt
+find . -name "notes.txt"   # Find file
+grep "line" notes.txt      # Search inside file
+wc notes.txt               # Count lines, words, chars
 ```
 
 ---
@@ -77,99 +45,69 @@ wc notes.txt
 ## 🔐 File Permissions
 
 ```bash
-# Check permissions
-ls -l
-
-# Make a script executable
-chmod +x script.sh
-
-# Change file permissions (read/write/execute)
-chmod 755 script.sh
+ls -l                   # View permissions
+chmod +x script.sh      # Make executable
+chmod 755 script.sh     # Set rwxr-xr-x
 ```
 
 ---
 
-## 🧠 Other Useful Commands
+## 🧠 System Info & Misc
 
 ```bash
-# Show present working directory
-pwd
-
-# Display calendar
-cal
-
-# Show current date and time
-date
-
-# Show who is logged in
-who
-
-# Show last login info
-last
-
-# Clear terminal screen
-clear
+pwd       # Current directory
+cal       # Calendar
+date      # Date/time
+who       # Who's logged in
+last      # Last login info
+clear     # Clear screen
 ```
 
 ---
 
-## 🧪 Shell Scripting Basics
+## 🧪 Shell Script Basics
 
 ```bash
-# Create a simple script
-echo -e '#!/bin/bash\necho "Hello from script!"' > hello.sh
-
-# Make it executable
+echo -e '#!/bin/bash\necho "Hi!"' > hello.sh
 chmod +x hello.sh
-
-# Run the script
 ./hello.sh
 ```
 
 ---
 
-## 🧑‍💻 User Management
+## 👤 User Management
 
 ```bash
-# Create a new user with a home directory
-sudo useradd -m username
-
-# Set password for the user
-sudo passwd username
-
-# Add user with a specific shell and comment
-sudo useradd -m -s /bin/bash -c "Full Name" username
-
-# Check if user exists in /etc/passwd
-grep username /etc/passwd
-
-# View user list from passwd file
-cat /etc/passwd
-
-# Switch to another user
-su username
-
-# View home directories
-ls /home
+sudo useradd -m newuser             # Create user
+sudo passwd newuser                # Set password
+sudo useradd -m -s /bin/bash -c "Full Name" user2
+grep user2 /etc/passwd             # Confirm user
+cat /etc/passwd                    # All users
+ls /home                           # Home directories
 ```
 
 ---
 
-## 🧾 Viewing System Info & History
+## 🔁 Switching Users
 
 ```bash
-# Show command history
-history
-
-# Find location of binaries
-whereis useradd
-whereis adduser
-
-# View binary as text (not readable normally)
-cat /usr/sbin/useradd
-cat /usr/sbin/adduser
+su - username          # Switch to another user (ask password)
+sudo su                # Become root (with sudo access)
+sudo -i                # Root shell
+whoami                 # Show current user
+exit                   # Return to previous user
 ```
 
 ---
 
-Keep experimenting and have fun exploring Linux! 🚀
+## 📂 Binary & History Commands
+
+```bash
+history                      # Show all commands used
+whereis useradd              # Find binary location
+cat /usr/sbin/useradd        # View binary (raw)
+```
+
+---
+
+💡 *Learning by doing makes it stick! I’m using this journal to build my confidence in Linux for DevOps and system-level development.*
