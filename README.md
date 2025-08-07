@@ -1,3 +1,4 @@
+
 # 🐧 My Linux Learning Journey
 
 Welcome to my personal Linux terminal learning log!  
@@ -38,6 +39,7 @@ I’m following two Udemy courses simultaneously:
 - [Help Commands](#-help-commands)
 - [Command History](#-command-history)
 - [Useful Tools](#-useful-tools)
+- [User Management](#-user-management)
 - [Resources](#-resources)
 
 ---
@@ -121,6 +123,29 @@ Example:
 wget https://www.gutenberg.org/files/1112/1112-0.txt
 cat 1112-0.txt
 ```
+
+---
+
+## 👥 User Management
+
+| Command | Description |
+|--------|-------------|
+| `whoami` | Show current user |
+| `id` | Show UID, GID, and group info |
+| `groups` | Show groups of user |
+| `su` | Switch user |
+| `sudo` | Run command as superuser |
+| `sudo su` | Become root user |
+| `sudo -i` | Start a root login shell |
+| `useradd`, `adduser` | Add new user |
+| `passwd` | Change user password |
+| `usermod` | Modify user |
+| `usermod -L/-U` | Lock/unlock user |
+| `visudo` | Edit sudoers file |
+| `userdel` | Delete a user |
+| `groupadd`, `addgroup` | Add group |
+| `groupdel` | Delete group |
+
 ---
 
 ## 🌱 Still Learning...
